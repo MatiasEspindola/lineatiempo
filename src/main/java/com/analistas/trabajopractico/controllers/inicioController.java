@@ -21,7 +21,7 @@ public class inicioController {
     @GetMapping({"/", "index"})
     public String index(Map m) {
 
-        m.put("titulo", "Formulario de Lenguaje");
+        m.put("titulo", "Inicio");
         return "index";
     }
 
