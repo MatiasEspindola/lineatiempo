@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.analistas.trabajopractico.TrabajopracticoApplicationTests
+-------------------------------------------------------------------------------
+<<<<<<< HEAD
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.766 s - in com.analistas.trabajopractico.TrabajopracticoApplicationTests
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.071 s - in com.analistas.trabajopractico.TrabajopracticoApplicationTests
+>>>>>>> 574bf519d215dd71fb04845507e9bb15c858fe2f
