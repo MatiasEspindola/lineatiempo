@@ -15,25 +15,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  * @author matia
  */
-
 @Controller
 public class inicioController {
-    
-    @GetMapping({"/","index"})
-    public String index(Map m){
-        
+
+    @GetMapping({"/", "index"})
+    public String index(Map m) {
+
+        m.put("titulo", "Formulario de Lenguaje");
         return "index";
     }
-    
-    
-    
-    @RequestMapping(value = "/form")
-	public String crear(Map<String, Object> model) {
 
-		Lenguaje lenguaje = new Lenguaje();
-		model.put("lenguaje", lenguaje);
-		model.put("titulo", "Formulario de Lenguaje");
-		return "formulario";
-	}
-        
+    @RequestMapping(value = "/form")
+    public String crear(Map<String, Object> model) {
+
+        Lenguaje lenguaje = new Lenguaje();
+        model.put("lenguaje", lenguaje);
+        model.put("titulo", "Formulario de Lenguaje");
+        return "formulario";
+    }
+
 }
