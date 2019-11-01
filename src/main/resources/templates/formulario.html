@@ -11,14 +11,14 @@
 			<div class="card-header" th:text="${titulo}"></div>
 			<div class="card-body">
 
-				<div th:object="${cliente}" th:remove="tag">
+				<div th:object="${lenguaje}" th:remove="tag">
 					<ul th:if="${#fields.hasErrors('*')}" class="alert alert-danger"
 						role="alert">
 						<li th:each="err : ${#fields.errors('*')}" th:text="${err}"></li>
 					</ul>
 				</div>
 
-				<form th:action="@{/form}" th:object="${cliente}" method="post"
+				<form th:action="@{/form}" th:object="${lenguaje}" method="post"
 					enctype="multipart/form-data">
 					<div class="form-group row">
 						<label for="nombre" class="col-sm-2 col-form-label" >Nombre</label>
